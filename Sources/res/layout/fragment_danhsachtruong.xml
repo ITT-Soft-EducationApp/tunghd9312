@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tranlucent_bg_v"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_white_20"
+        android:orientation="vertical"
+        android:paddingTop="5dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="@xml/button_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/fragment_danhsachtruong_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@color/bg_null"
+                android:ems="10"
+                android:hint="@string/tentruong"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" >
+
+                <requestFocus />
+            </EditText>
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/ic_search" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/fragment_danhsachtruong_check_layout"
+                android:layout_width="100dp"
+                android:layout_height="38dp"
+                android:layout_margin="3dp"
+                android:background="@xml/checkbox_bg_onselected"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/fragment_danhsachtruong_check_image"
+                    android:layout_width="25dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/F44336"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_check_onselected" />
+
+                <TextView
+                    android:id="@+id/fragment_danhsachtruong_checkTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@color/bg_null"
+                    android:gravity="center_vertical"
+                    android:text="@string/timtheotentruong"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fragment_danhsachtruong_check_layout_1"
+                android:layout_width="100dp"
+                android:layout_height="38dp"
+                android:layout_margin="3dp"
+                android:background="@xml/checkbox_bg"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/fragment_danhsachtruong_check_image_1"
+                    android:layout_width="25dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/list_background_pressed"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_check" />
+
+                <TextView
+                    android:id="@+id/fragment_danhsachtruong_checkTitle_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@color/bg_null"
+                    android:gravity="center_vertical"
+                    android:text="@string/timtheokhuvuc"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fragment_danhsachtruong_check_layout_2"
+                android:layout_width="100dp"
+                android:layout_height="38dp"
+                android:layout_margin="3dp"
+                android:background="@xml/checkbox_bg"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/fragment_danhsachtruong_check_image_2"
+                    android:layout_width="25dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/list_background_pressed"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_check" />
+
+                <TextView
+                    android:id="@+id/fragment_danhsachtruong_checkTitle_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@color/bg_null"
+                    android:gravity="center_vertical"
+                    android:text="@string/timtheomatruong"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="5dp"
+            android:background="@color/bg_white_20"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:text="417"
+                android:textColor="@color/text_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:text="@string/ketqua"
+                android:textColor="@color/text_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/fragment_danhsachtruong_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:choiceMode="singleChoice"
+            android:divider="@color/bg_white_30"
+            android:dividerHeight="1dp" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="35dp"
+        android:layout_marginRight="15dp"
+        android:gravity="right" >
+
+        <Button
+            android:id="@+id/fragment_danhsachtruong_refresh"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@xml/refresh_bg"
+            android:gravity="center"
+            android:text="R"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</FrameLayout>
