@@ -28,10 +28,14 @@
     <color name="bg_tranperent_10">#1A000000</color>
     <color name="bg_tranperent_5">#0D000000</color>
     <color name="bg_deep_blue_50">#993F51B5</color>
+    <color name="bg_white_75">#BFFFFFFF</color>
     <color name="bg_white_60">#99FFFFFF</color>
     <color name="bg_white_50">#80FFFFFF</color>
+    <color name="bg_white_40">#66FFFFFF</color>
     <color name="bg_white_30">#4DFFFFFF</color>
     <color name="bg_white_20">#33FFFFFF</color>
+    <color name="bg_white_15">#26FFFFFF</color>
+    <color name="bg_white_10">#1AFFFFFF</color>
     <color name="bg_white_5">#0DFFFFFF</color>
     <!-- Text -->
     <color name="text_color">#3d3d3d</color>

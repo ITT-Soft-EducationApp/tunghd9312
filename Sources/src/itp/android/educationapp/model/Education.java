@@ -1,19 +1,37 @@
 package itp.android.educationapp.model;
 
 public class Education {
-	private int id, phone, status;
-	private String name, code, area, admission, website;
+	private int id, status;
+	private String name, code, area, admission, address, phone ,email, website;
 
-	public Education(int id, String name, String code, String area, String admission, String website, int phone,
+	public Education(int id, String name, String code, String area, String admission, String address , String phone, String email ,String website, 
 			int status) {
 		this.id = id;
 		this.name = name;
 		this.code = code;
 		this.area = area;
 		this.admission = admission;
+		this.address = address;
+		this.email = email;
 		this.website = website;
 		this.phone = phone;
 		this.status = status;
+	}
+	
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	public int getId() {
@@ -24,11 +42,11 @@ public class Education {
 		this.id = id;
 	}
 
-	public int getPhone() {
+	public String getPhone() {
 		return phone;
 	}
 
-	public void setPhone(int phone) {
+	public void setPhone(String phone) {
 		this.phone = phone;
 	}
 

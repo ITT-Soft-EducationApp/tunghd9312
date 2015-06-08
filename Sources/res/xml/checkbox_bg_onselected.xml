@@ -2,10 +2,10 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android"> 
 <solid android:color="@color/F44336"/>    
 <stroke android:width="2dp"
-        android:color="@color/F44336" />
+        android:color="@color/list_background" />
 <gradient                           
-    android:startColor="@color/bg_white_20" 
-    android:endColor="@color/bg_white_20" 
+    android:startColor="@color/bg_white_30" 
+    android:endColor="@color/bg_white_30" 
     android:angle="90"/> 
 
 <padding android:left="0dp"

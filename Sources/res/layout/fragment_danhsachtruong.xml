@@ -29,7 +29,7 @@
                 android:background="@color/bg_null"
                 android:ems="10"
                 android:hint="@string/tentruong"
-                android:textColor="@android:color/white"
+                android:textColor="@color/text_color"
                 android:textSize="12sp" >
 
                 <requestFocus />
@@ -61,7 +61,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginLeft="2dp"
                     android:layout_marginRight="5dp"
-                    android:background="@color/F44336"
+                    android:background="@color/list_background"
                     android:padding="5dp"
                     android:src="@drawable/ic_check_onselected" />
 
@@ -147,6 +147,7 @@
             android:orientation="horizontal" >
 
             <TextView
+                android:id="@+id/fragment_danhsachtruong_result"
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
                 android:layout_marginLeft="15dp"
@@ -179,19 +180,24 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_gravity="bottom"
-        android:layout_marginBottom="35dp"
+        android:layout_marginBottom="25dp"
         android:layout_marginRight="15dp"
         android:gravity="right" >
 
-        <Button
-            android:id="@+id/fragment_danhsachtruong_refresh"
+        <LinearLayout
             android:layout_width="50dp"
             android:layout_height="50dp"
+            android:layout_gravity="right"
             android:background="@xml/refresh_bg"
-            android:gravity="center"
-            android:text="R"
-            android:textColor="@android:color/white"
-            android:textSize="18sp" />
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/fragment_danhsachtruong_refresh"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_refresh" />
+        </LinearLayout>
     </LinearLayout>
 
 </FrameLayout>

@@ -3,7 +3,7 @@
 
     <string name="version">1.0.1</string>
     <string name="phienban">Phiên bản</string>
-    <string name="app_name">Tin tuyển sinh</string>
+    <string name="app_name">Cẩm nang Tuyển sinh</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="danhsachtruong">Danh sách trường ĐH&amp;CĐ</string>
@@ -24,7 +24,48 @@
     <string name="khuvuc">khu vực</string>
     <string name="matruong">mã trường</string>
     <string name="ketqua">kết quả</string>
-
+    <string name="error_call">Số điện thoại không có sẵn</string>
+    <string name="error_email">Email không có sẵn</string>
+    <string name="error_website">Website không có sẵn</string>
+    <!-- Tu Van -->
+    <string name="tuvantab1">Tuyển sinh</string>
+    <string name="tuvantab2">Chọn ngành nghề</string>
+    <string name="tuvantab3">Chọn Trường</string>
+    <string name="comingsoon">Sẽ ra mắt trong phiên bản cập nhật tới</string>
+    <string name="tuvan_content">1. Hồ sơ đăng ký dự thi đối với thí sinh chưa có bằng tốt nghiệp THPT
+a) Đối với đối tượng học hết lớp 12 trong năm 2015:
+- 02 Phiếu đăng ký dự thi giống nhau;
+- Học bạ THPT; học bạ hoặc Phiếu kiểm tra của người học theo hình thức tự học đối với GDTX (bản sao);
+- Các giấy chứng nhận hợp lệ để được hưởng chế độ ưu tiên, khuyến khích (nếu có). Để được hưởng chế độ ưu tiên liên quan đến nơi đăng ký hộ khẩu thường trú, thí sinh phải có bản sao Sổ đăng ký hộ khẩu thường trú;
+- 02 ảnh cỡ 4x6 cm và 02 phong bì đã dán sẵn tem và ghi rõ địa chỉ liên lạc của thí sinh.
+b) Đối với thí sinh tự do, ngoài các hồ sơ quy định trên, phải có thêm:
+- Giấy khai sinh (bản sao);
+- Giấy xác nhận của UBND cấp xã nơi cư trú theo nội dung quy định nếu thuộc trường hợp không đủ điều kiện dự thi trong các năm trước do bị xếp loại yếu về hạnh kiểm ở lớp 12;
+- Giấy xác nhận của trường phổ thông nơi học lớp 12 hoặc nơi đăng ký dự thi về xếp loại học lực đối với những học sinh xếp loại kém về học lực
+- Bằng tốt nghiệp THCS hoặc trung cấp (bản sao);
+- Giấy xác nhận điểm bảo lưu (nếu có) do Hiệu trưởng trường phổ thông nơi thí sinh đã dự thi năm trước xác nhận.
+ 
+2. Hồ sơ đăng ký dự thi đối với thí sinh tự do đã tốt nghiệp THPT: 
+a) 02 Phiếu đăng ký dự thi giống nhau;
+b) Bằng tốt nghiệp THPT hoặc trung cấp (bản sao);
+c) 02 ảnh cỡ 4x6 cm và 02 phong bì đã dán sẵn tem và ghi rõ địa chỉ liên lạc của thí sinh.
+ 
+3. Hạn cuối cùng nhận hồ sơ đăng ký dự thi: trước ngày 30 tháng 4 hằng năm. Khi hết hạn nộp hồ sơ đăng ký dự thi, nếu phát hiện có nhầm lẫn, sai sót, thí sinh phải thông báo kịp thời cho Hiệu trưởng trường phổ thông hoặc Thủ trưởng đơn vị nơi đăng ký dự thi hoặc cho Hội đồng thi trong ngày làm thủ tục dự thi để sửa chữa, bổ sung.
+ 
+Các trường hợp đặc biệt được phép bổ sung các loại giấy chứng nhận để được hưởng chế độ ưu tiên, hưởng cộng điểm khuyến khích phải thực hiện trước ngày tổ chức kỳ thi mới có giá trị. </string>
+	<string name="tuvan_name">Hồ sơ đăng ký dự thi THPT Quốc gia 2015</string>
+    <!-- Tin tuyen sinh -->
+    <string name="tuvantuyensinh">Tư vấn Tuyển sinh</string>
+    <string name="sodienthoai">Số điện thoại: </string>
+    <string name="website">Website: </string>
+    <string name="email">Email: </string>
+    <string name="goi">Gọi</string>
+    <string name="guimail">Email</string>
+    <string name="truycapwebsite">Website</string>
+    <string name="content">This color palette comprises primary and accent colors that can be used for illustration or to develop your brand colors. They’ve been designed to work harmoniously with each other. The color palette starts with primary colors and fills in the spectrum to create a complete and usable palette for Android, Web, and iOS. Google suggests using the 500 colors as the primary colors in your app and the other colors as accents colors.</string>
+    <string name="content1">Text on colored backgrounds. For white or black text on colored backgrounds, see these tables of color palettes for the appropriate contrast ratios and hex values.Other elements, such as icons and dividers, benefit from having a hex value of black or white so that they work on backgrounds of any color.</string>
+    
+    
     <!-- Nav Drawer Menu Items -->
     <string-array name="nav_drawer_items">
         <item>Tin nóng tuyển sinh</item>

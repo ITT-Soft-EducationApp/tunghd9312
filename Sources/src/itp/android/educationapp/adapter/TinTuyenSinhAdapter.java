@@ -52,7 +52,7 @@ public class TinTuyenSinhAdapter extends BaseAdapter {
 					.getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
 			convertView = mInflater.inflate(resource, parent, false);
 		}
-		if(resource == R.layout.tintuyensinh_list){
+		if(resource == R.layout.item_tintuyensinh_list){
 			TextView time = (TextView)convertView.findViewById(R.id.tintuyensinh_item_time);
 			time.setText(news.getCreated_at());
 			

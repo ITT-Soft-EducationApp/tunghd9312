@@ -4,7 +4,7 @@
 
     <gradient
         android:angle="90"
-        android:endColor="@color/list_background_pressed"
-        android:startColor="@color/list_background_pressed" />
+        android:endColor="@color/bg_white_20"
+        android:startColor="@color/bg_white_20" />
 
 </shape>

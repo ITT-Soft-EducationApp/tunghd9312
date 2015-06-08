@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent"
+    android:background="@drawable/tranlucent_bg_v" >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/bg_white_75"
         android:orientation="vertical" >
 
         <FrameLayout
+            android:id="@+id/tintuyensinh_top1_image_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" >
 
-            <itp.android.educationapp.extras.StretchyImageView
-                android:id="@+id/tintuyensinh_item_image"
+            <ImageView
+                android:id="@+id/tintuyensinh_top1_image"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginTop="5dp"
+                android:background="@drawable/back_onclick"
                 android:scaleType="centerCrop"
                 android:src="@drawable/beutiful_girl_5" />
 
@@ -32,12 +36,13 @@
                 android:background="@color/bg_tranperent_50" >
 
                 <TextView
-                    android:id="@+id/tintuyensinh_item_top4_title1"
+                    android:id="@+id/tintuyensinh_top1_title1"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
                     android:gravity="center_vertical"
+                    android:lines="2"
                     android:text="Nữ sinh khiến nhiều fan phát cuồng vì quá xinh xắn, dễ thương"
                     android:textColor="@android:color/white"
                     android:textSize="18sp" />
@@ -57,13 +62,15 @@
                 android:layout_weight="1" >
 
                 <FrameLayout
-                    android:layout_width="wrap_content"
+                    android:id="@+id/tintuyensinh_top4_image1_layout"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="bottom" >
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/back_onclick" >
 
                     <ImageView
-                        android:id="@+id/tintuyensinh_item_top4_image1"
-                        android:layout_width="wrap_content"
+                        android:id="@+id/tintuyensinh_top4_image1"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom"
                         android:layout_marginRight="3dp"
@@ -71,7 +78,7 @@
                         android:src="@drawable/beutiful_girl_4" />
 
                     <TextView
-                        android:id="@+id/tintuyensinh_item_title1"
+                        android:id="@+id/tintuyensinh_top4_title1"
                         android:layout_width="wrap_content"
                         android:layout_height="35dp"
                         android:layout_gravity="bottom"
@@ -94,13 +101,15 @@
                 android:layout_weight="1" >
 
                 <FrameLayout
-                    android:layout_width="wrap_content"
+                    android:id="@+id/tintuyensinh_top4_image2_layout"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="bottom">
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/back_onclick" >
 
                     <ImageView
-                        android:id="@+id/tintuyensinh_item_top4_image2"
-                        android:layout_width="wrap_content"
+                        android:id="@+id/tintuyensinh_top4_image2"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom"
                         android:layout_marginLeft="3dp"
@@ -108,7 +117,7 @@
                         android:src="@drawable/beutiful_girl_3" />
 
                     <TextView
-                        android:id="@+id/tintuyensinh_item_title2"
+                        android:id="@+id/tintuyensinh_top4_title2"
                         android:layout_width="match_parent"
                         android:layout_height="35dp"
                         android:layout_gravity="bottom"
@@ -140,13 +149,15 @@
                 android:layout_weight="1" >
 
                 <FrameLayout
-                    android:layout_width="wrap_content"
+                    android:id="@+id/tintuyensinh_top4_image3_layout"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="bottom">
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/back_onclick" >
 
                     <ImageView
-                        android:id="@+id/tintuyensinh_item_top4_image3"
-                        android:layout_width="wrap_content"
+                        android:id="@+id/tintuyensinh_top4_image3"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom"
                         android:layout_marginRight="3dp"
@@ -154,8 +165,8 @@
                         android:src="@drawable/beutiful_girl_2" />
 
                     <TextView
-                        android:id="@+id/tintuyensinh_item_title3"
-                        android:layout_width="wrap_content"
+                        android:id="@+id/tintuyensinh_top4_title3"
+                        android:layout_width="match_parent"
                         android:layout_height="35dp"
                         android:layout_gravity="bottom"
                         android:layout_marginRight="3dp"
@@ -177,13 +188,15 @@
                 android:layout_weight="1" >
 
                 <FrameLayout
-                    android:layout_width="wrap_content"
+                    android:id="@+id/tintuyensinh_top4_image4_layout"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="bottom" >
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/back_onclick" >
 
                     <ImageView
-                        android:id="@+id/tintuyensinh_item_top4_image4"
-                        android:layout_width="wrap_content"
+                        android:id="@+id/tintuyensinh_top4_image4"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom"
                         android:layout_marginLeft="3dp"
@@ -191,7 +204,7 @@
                         android:src="@drawable/beutiful_girl_1" />
 
                     <TextView
-                        android:id="@+id/tintuyensinh_item_title4"
+                        android:id="@+id/tintuyensinh_top4_title4"
                         android:layout_width="match_parent"
                         android:layout_height="35dp"
                         android:layout_gravity="bottom"
@@ -207,77 +220,6 @@
                 </FrameLayout>
             </LinearLayout>
         </LinearLayout>
-
-        <!-- <GridView -->
-        <!-- android:id="@+id/fragment_tintuyensinh_top4" -->
-        <!-- android:layout_width="match_parent" -->
-        <!-- android:layout_height="match_parent" -->
-        <!-- android:layout_weight="1" -->
-        <!-- android:numColumns="2" > -->
-        <!-- </GridView> -->
-
-
-        <!-- List -->
-
-
-        <!-- <ListView -->
-        <!-- android:id="@+id/fragment_tintuyensinh_list" -->
-        <!-- android:layout_width="match_parent" -->
-        <!-- android:layout_height="match_parent" > -->
-        <!-- </ListView> -->
-        <!-- <LinearLayout -->
-        <!-- android:layout_width="match_parent" -->
-        <!-- android:layout_height="wrap_content" -->
-        <!-- android:background="@android:color/white" -->
-        <!-- android:gravity="center_vertical" -->
-        <!-- android:orientation="horizontal" -->
-        <!-- android:padding="10dp" > -->
-
-
-        <!-- <itp.android.educationapp.extras.StretchyImageView -->
-        <!-- android:id="@+id/tintuyensinh_item_list_image" -->
-        <!-- android:layout_width="30dp" -->
-        <!-- android:layout_height="30dp" -->
-        <!-- android:scaleType="centerCrop" -->
-        <!-- android:src="@drawable/beutiful_girl_1" /> -->
-
-
-        <!-- <LinearLayout -->
-        <!-- android:layout_width="match_parent" -->
-        <!-- android:layout_height="wrap_content" -->
-        <!-- android:layout_marginLeft="10dp" -->
-        <!-- android:layout_weight="1" -->
-        <!-- android:gravity="center_vertical" -->
-        <!-- android:orientation="vertical" > -->
-
-
-        <!-- <TextView -->
-        <!-- android:id="@+id/tintuyensinh_item_list_title" -->
-        <!-- android:layout_width="match_parent" -->
-        <!-- android:layout_height="wrap_content" -->
-        <!-- android:text="asgagsasga" -->
-        <!-- android:textColor="@color/text_color" -->
-        <!-- android:textSize="14sp" /> -->
-
-
-        <!-- <TextView -->
-        <!-- android:id="@+id/tintuyensinh_item_time" -->
-        <!-- android:layout_width="match_parent" -->
-        <!-- android:layout_height="wrap_content" -->
-        <!-- android:text="asgagsasga" -->
-        <!-- android:textColor="@color/text_color_disable" -->
-        <!-- android:textSize="10sp" /> -->
-        <!-- </LinearLayout> -->
-
-
-        <!-- <TextView -->
-        <!-- android:layout_width="wrap_content" -->
-        <!-- android:layout_height="match_parent" -->
-        <!-- android:layout_margin="10dp" -->
-        <!-- android:text="> " -->
-        <!-- android:textColor="@color/text_color_disable" -->
-        <!-- android:textSize="14sp" /> -->
-        <!-- </LinearLayout> -->
     </LinearLayout>
 
 </ScrollView>

@@ -1,8 +1,8 @@
 package itp.android.educationapp;
 
 import itp.android.educationapp.adapter.NavDrawerListAdapter;
+import itp.android.educationapp.fragment.CaidatFragment;
 import itp.android.educationapp.fragment.DanhSachTruongFragment;
-import itp.android.educationapp.fragment.HelpFragment;
 import itp.android.educationapp.fragment.NhungDieuCanBietFragment;
 import itp.android.educationapp.fragment.TinTuyenSinhFragment;
 import itp.android.educationapp.fragment.TraCuuDiemThiFragment;
@@ -11,13 +11,14 @@ import itp.android.educationapp.model.NavDrawer;
 
 import java.util.ArrayList;
 
-import android.app.Fragment;
-import android.app.FragmentManager;
+import android.content.Context;
 import android.content.res.Configuration;
 import android.content.res.TypedArray;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
@@ -25,6 +26,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
@@ -79,8 +81,7 @@ public class MainActivity extends ActionBarActivity {
 
 		// enabling action bar app icon and behaving it as toggle button
 		actionBar = getSupportActionBar();
-		actionBar.setBackgroundDrawable(new ColorDrawable(getResources()
-				.getColor(R.color.action_bar)));
+		actionBar.setBackgroundDrawable(getResources().getDrawable(R.drawable.tranlucent_bg_a));
 		actionBar.setDisplayHomeAsUpEnabled(true);
 		actionBar.setHomeButtonEnabled(true);
 
@@ -145,6 +146,16 @@ public class MainActivity extends ActionBarActivity {
 			return super.onOptionsItemSelected(item);
 		}
 	}
+	
+	void hideKeyboard(){
+		View v = getCurrentFocus();
+		if (v != null) {
+			InputMethodManager inputManager = (InputMethodManager) getApplication()
+					.getSystemService(Context.INPUT_METHOD_SERVICE);
+			inputManager.hideSoftInputFromWindow(v.getWindowToken(),
+					InputMethodManager.HIDE_NOT_ALWAYS);
+		}
+	}
 
 	/***
 	 * Called when invalidateOptionsMenu() is triggered
@@ -153,6 +164,7 @@ public class MainActivity extends ActionBarActivity {
 	public boolean onPrepareOptionsMenu(Menu menu) {
 		// if nav drawer is opened, hide the action items
 		boolean drawerOpen = mDrawerLayout.isDrawerOpen(mDrawerList);
+		hideKeyboard();
 		menu.findItem(R.id.action_settings).setVisible(!drawerOpen);
 		return super.onPrepareOptionsMenu(menu);
 	}
@@ -180,7 +192,7 @@ public class MainActivity extends ActionBarActivity {
 			fragment = new TuVanFragment();
 			break;
 		case 5:
-			fragment = new HelpFragment();
+			fragment = new CaidatFragment();
 			break;
 
 		default:
@@ -188,7 +200,7 @@ public class MainActivity extends ActionBarActivity {
 		}
 
 		if (fragment != null) {
-			FragmentManager fragmentManager = getFragmentManager();
+			FragmentManager fragmentManager = getSupportFragmentManager();
 			fragmentManager.beginTransaction()
 					.replace(R.id.frame_container, fragment).commit();
 
